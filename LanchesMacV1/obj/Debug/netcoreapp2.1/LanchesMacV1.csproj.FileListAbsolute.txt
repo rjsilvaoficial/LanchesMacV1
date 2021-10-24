@@ -16,10 +16,6 @@ C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\La
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.TagHelpers.input.cache
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.TagHelpers.output.cache
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.RazorCoreGenerate.cache
-C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
-C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
-C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -36,3 +32,9 @@ C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\La
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Lanche\List.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LanchesResumo.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\CarrinhoCompra\Index.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Homex\About.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Homex\Contact.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Homex\Index.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Homex\Privacy.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
