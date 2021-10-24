@@ -61,7 +61,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("\r\n<div class=\"col-sm-4 col-md-4 col-lg-4\">\r\n    <div class=\"thumbnail\">\r\n        ");
             EndContext();
             BeginContext(96, 61, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2dcaa427138248dba61bc5f3e74e2f7b", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "589b37dc6d6849d694d6c171dc1cc8fb", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
