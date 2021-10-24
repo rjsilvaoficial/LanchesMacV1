@@ -1,4 +1,5 @@
 ﻿using LanchesMacV1.Context;
+using LanchesMacV1.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -39,9 +40,9 @@ namespace LanchesMacV1
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
 
-            /*  // Transient são diferentes sempre 
+            // Transient são diferentes sempre 
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
-            services.AddTransient<ILancheRepository, LancheRepository>(); */
+            services.AddTransient<ILancheRepository, LancheRepository>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
