@@ -23,8 +23,13 @@ using LanchesMacV1.Models;
 
 #line default
 #line hidden
+#line 3 "C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\Views\_ViewImports.cshtml"
+using LanchesMacV1.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"583387379a597938339285f5a623245873b0a91c", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dffaac256101f3d7ce71bc65ab9d572413efb03e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2960f3d000e97543b6a567e2acaf485c89aca8ee", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

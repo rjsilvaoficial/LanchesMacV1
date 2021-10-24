@@ -33,3 +33,5 @@ C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\La
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.pdb
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.genruntimeconfig.cache
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\LanchesMacV1.csproj.CopyComplete
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Lanche\List.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LanchesResumo.cshtml.g.cs
