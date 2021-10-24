@@ -1,4 +1,5 @@
 ﻿using LanchesMacV1.Context;
+using LanchesMacV1.Models;
 using LanchesMacV1.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,9 +41,18 @@ namespace LanchesMacV1
             var connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
 
-            // Transient são diferentes sempre 
+            //Obj transient são sempre diferentes; uma nova instância é fornecida a todos os controllers e todos os serviços.
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
-            services.AddTransient<ILancheRepository, LancheRepository>(); 
+            services.AddTransient<ILancheRepository, LancheRepository>();
+
+            //inclusão do httpcontextacessor conforme informado em CarrinhoCompra
+            //Os objetos singleton são os mesmos para cada objeto e cada solicitação.
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            //Objetos escopo são os mesmos dentro de uma solicitação, mas diferentes entre diferentes solicitações.
+            services.AddScoped(objetoCarrinhoCompra => CarrinhoCompra.GetCarrinho(objetoCarrinhoCompra));
+            services.AddMemoryCache(); //Adicionada cache em memória (imagino q por causa dos sessions)
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +71,9 @@ namespace LanchesMacV1
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            app.UseSession();
+
 
             app.UseMvc(routes =>
             {
