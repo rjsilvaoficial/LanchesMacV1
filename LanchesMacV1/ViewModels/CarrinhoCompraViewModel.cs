@@ -10,7 +10,6 @@ namespace LanchesMacV1.ViewModels
     public class CarrinhoCompraViewModel
     {
         public CarrinhoCompra CarrinhoCompra { get; set; }
-        [Column(TypeName = "decimal(18,2)")]  //o annotation Column, está disponível em DataAnnotations.Schema
         public decimal CarrinhoCompraTotal { get; set; }
     }
 }

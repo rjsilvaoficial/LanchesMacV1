@@ -38,3 +38,4 @@ C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Ra
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Homex\Privacy.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Carousel.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Components\CarrinhoCompraResumo\Default.cshtml.g.cs

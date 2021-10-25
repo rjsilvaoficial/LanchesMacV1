@@ -12,7 +12,6 @@ namespace LanchesMacV1.Context
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Lanche> Lanches { get; set; }
-
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
     }
