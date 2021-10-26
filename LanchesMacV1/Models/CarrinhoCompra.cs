@@ -9,8 +9,9 @@ using System.Threading.Tasks;
 
 namespace LanchesMacV1.Models
 {
-    public class CarrinhoCompra //Nesta classe precisamos do EF (contexto) e Cookies (IServiceProvider)
+    public class CarrinhoCompra //Nesta classe precisamos do EF (contexto) e Cookies via session (IServiceProvider)
     {
+
         private readonly AppDbContext _context; //Injeção de dependência para AppDbContext visando usar o db via EF
 
         public CarrinhoCompra(AppDbContext context)
