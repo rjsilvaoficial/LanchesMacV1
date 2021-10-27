@@ -17,14 +17,14 @@ namespace LanchesMacV1.Repository
             _context = context;
         }
 
-        public IEnumerable<Lanche> Lanches => _context.Lanches.Include(atb => atb.Categoria);
+        public IEnumerable<Lanche> Lanches => _context.Lanches.Include(atbAdicional => atbAdicional.Categoria);
 
-        public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.Where(atb => atb.IsLanchePreferido);
+        public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.Where(seletor => seletor.IsLanchePreferido);
 
         public Lanche GetLancheById(int lancheId)
-        {
+        {    
+        // tipo   nomeVar       contx . ObjContex.  Linq        (referido =. referido.Entity1Id ==entity1Id)
             var lancheBuscado = _context.Lanches.FirstOrDefault(objeto => objeto.LancheId == lancheId);
-
             return lancheBuscado;
         }
     }

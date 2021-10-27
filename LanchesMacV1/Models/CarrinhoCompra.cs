@@ -22,6 +22,7 @@ namespace LanchesMacV1.Models
         public string CarrinhoCompraId { get; set; }
         public List<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
 
+
         public static CarrinhoCompra GetCarrinho(IServiceProvider services) //Usa IServiceProvider para acessar o serviços em Startup.cs
         {
             //Define uma session usando o contexto atual e precisa ser inserido em IServiceCollection do Startup.cs.ConfigureServices().
