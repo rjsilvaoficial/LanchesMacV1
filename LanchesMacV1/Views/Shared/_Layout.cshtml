@@ -31,9 +31,10 @@
             <div class="navbar-collapse collapse" id="bs-example-navbar-collpse-1">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    @await Component.InvokeAsync("CategoriaMenu")
                     <li><a asp-area="" asp-controller="Homex" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Contato" asp-action="Index">Contact</a></li>
-                    @await Component.InvokeAsync("CarrinhoCompraResumo") 
+                    @await Component.InvokeAsync("CarrinhoCompraResumo")
                 </ul>
             </div>
         </div>
