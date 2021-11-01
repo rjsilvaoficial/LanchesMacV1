@@ -44,6 +44,7 @@ namespace LanchesMacV1
             //Obj transient são sempre diferentes; uma nova instância é fornecida a todos os controllers e todos os serviços.
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             services.AddTransient<ILancheRepository, LancheRepository>();
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
 
             //inclusão do httpcontextacessor conforme informado em CarrinhoCompra
             //Os objetos singleton são os mesmos para cada objeto e cada solicitação.
