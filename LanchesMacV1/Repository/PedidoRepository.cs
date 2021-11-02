@@ -22,6 +22,7 @@ namespace LanchesMacV1.Repository
         {
             pedido.PedidoEnviado = DateTime.Now;
             _appDbContext.Pedidos.Add(pedido);
+
             _appDbContext.SaveChanges();
 
             var carrinhoCompraItens = _carrinhoCompra.CarrinhoCompraItens;

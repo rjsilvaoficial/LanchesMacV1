@@ -10,6 +10,7 @@ namespace LanchesMacV1.Models
 {
     public class Pedido
     {
+        [BindNever]
         public int PedidoId { get; set; }
 
         [Required(ErrorMessage ="Informe o nome")]
