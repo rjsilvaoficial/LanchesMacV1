@@ -68,7 +68,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("\r\n<div class=\"col-sm-4 col-md-4 col-lg-4\">\r\n    <div class=\"thumbnail\">\r\n        ");
             EndContext();
             BeginContext(96, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "050bbe4e016b4d8e981d202b656bce28", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5a2bc8fbf835473a9de6c983c2b68af4", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +101,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("</h3>\r\n        <h3>\r\n            ");
             EndContext();
             BeginContext(343, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4616d253418c4d5b8aeec3059caf6590", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3296cf8164643aa96f57ae4fcc87958", async() => {
                 BeginContext(429, 10, false);
 #line 10 "C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\Views\Shared\_LanchesResumo.cshtml"
                                                                                             Write(Model.Nome);
@@ -152,7 +152,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("</p>\r\n    </div>   \r\n    <div class=\"addToCart text-right\">\r\n        <p class=\"button\">\r\n            ");
             EndContext();
             BeginContext(593, 191, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f33164111b7f416785be0c817f1c2a90", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "75a19500b9084e67ab94f22a8bd70b73", async() => {
                 BeginContext(759, 21, true);
                 WriteLiteral(" Incluir no carrinho ");
                 EndContext();

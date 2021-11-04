@@ -21,10 +21,12 @@ namespace LanchesMacV1.Models
         [StringLength(20)]
         public string Sobrenome { get; set; }
 
+        [Display(Name = "Endereço")]
         [Required(ErrorMessage = "Informe o endereço")]
         [StringLength(100)]
         public string Endereco1 { get; set; }
 
+        [Display(Name ="Complemento")]
         [Required(ErrorMessage = "Informe o complemento")]
         [StringLength(100)]
         public string Endereco2 { get; set; }
@@ -53,7 +55,7 @@ namespace LanchesMacV1.Models
         public string Email { get; set; }
 
         [BindNever]
-        //[Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal(18,2)")]
         [ScaffoldColumn(false)]
         public decimal PedidoTotal { get; set; }
         public DateTime PedidoEnviado { get; set; }

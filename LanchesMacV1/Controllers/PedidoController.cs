@@ -39,19 +39,16 @@ namespace LanchesMacV1.Controllers
             if (ModelState.IsValid)
             {
                 _pedidoRepository.CriarPedido(pedido);
+
+                ViewBag.CheckOutCompletoMensagem = "Obrigado por seu pedido";
+                ViewBag.TotalPedido = _carrinhoCompra.GetCarrinhoCompraTotal();
+
                 _carrinhoCompra.LimparCarrinho();
 
-                return RedirectToAction("CheckOutCompleto");
+                return View("~/Views/Pedido/CheckOutCompleto.cshtml", pedido);
             }
 
             return View(pedido);
-        }
-
-        public IActionResult CheckOutCompleto()
-        {
-            ViewBag.CheckOutCompletoMensagem = "Obrigado por seu pedido";
-            return View();
-
         }
 
     }
