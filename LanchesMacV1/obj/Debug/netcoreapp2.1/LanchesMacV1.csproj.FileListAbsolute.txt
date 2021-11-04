@@ -44,3 +44,7 @@ C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Ra
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Lanche\Details.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Pedido\CheckOut.cshtml.g.cs
 C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Pedido\CheckOutCompleto.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Account\Logout.cshtml.g.cs
+C:\Users\robso\source\repos\LanchesMacV1\LanchesMacV1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
