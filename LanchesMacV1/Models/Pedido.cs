@@ -10,7 +10,7 @@ namespace LanchesMacV1.Models
 {
     public class Pedido
     {
-        [BindNever]
+        //[BindNever]
         public int PedidoId { get; set; }
 
         [Required(ErrorMessage ="Informe o nome")]
@@ -58,7 +58,16 @@ namespace LanchesMacV1.Models
         [Column(TypeName = "decimal(18,2)")]
         [ScaffoldColumn(false)]
         public decimal PedidoTotal { get; set; }
+
+        [Display(Name ="Data e horário do recebimento do pedido")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString ="(0: dd/MM/yyyy hh:mm)", ApplyFormatInEditMode =true)]
         public DateTime PedidoEnviado { get; set; }
+
+        [Display(Name = "Data e horário da entrega do pedido")]
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "(0: dd/MM/yyyy hh:mm)", ApplyFormatInEditMode = true)]
+        public DateTime? PedidoEntregueEm { get; set; }
         public List<PedidoDetalhe> PedidoItens{ get; set; }
 
     }

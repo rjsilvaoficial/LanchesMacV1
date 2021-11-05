@@ -130,6 +130,8 @@ namespace LanchesMacV1.Migrations
                         .IsRequired()
                         .HasMaxLength(20);
 
+                    b.Property<DateTime?>("PedidoEntregueEm");
+
                     b.Property<DateTime>("PedidoEnviado");
 
                     b.Property<decimal>("PedidoTotal")
