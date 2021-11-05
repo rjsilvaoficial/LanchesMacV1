@@ -13,7 +13,8 @@ namespace LanchesMacV1.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<IdentityUser> userManager, 
+                                 SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -22,7 +23,10 @@ namespace LanchesMacV1.Controllers
         [HttpGet]
         public IActionResult Login(string returnUrl)
         {
-            return View(new LoginViewModel() { ReturnUrl = returnUrl });
+            return View(new LoginViewModel() 
+            { 
+                ReturnUrl = returnUrl 
+            });
         }
 
         [HttpPost]
@@ -82,6 +86,7 @@ namespace LanchesMacV1.Controllers
             }
             return View(regVM);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Logout()
