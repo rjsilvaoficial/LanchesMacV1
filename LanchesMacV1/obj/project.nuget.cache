@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HUipDf7uoGj9xkKYrp73Jo2AyVLLzzw0KF7DjFaoFWtyvSreMenqoFL4UejujZzyPSH58gITgz4eB4j1Pjd3dg==",
+  "dgSpecHash": "Od4qu9yrNy5j8BfY2W7M1V3cHbDZcmVW00Bpzn0G5zby6KsSCZsW3Xi6T3ricmL+jzWxcc4shOHQMryteuuHOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
+  "projectFilePath": "C:\\Users\\robso\\Projetos\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\robso\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",
