@@ -33,8 +33,8 @@ namespace LanchesMacV1.Controllers
         {
             var itens = _carrinhoCompra.GetCarrinhoCompraItens();
             _carrinhoCompra.CarrinhoCompraItens = itens;
-            
-            if(_carrinhoCompra.CarrinhoCompraItens.Count == 0)
+
+            if (_carrinhoCompra.CarrinhoCompraItens.Count == 0)
             {
                 ModelState.AddModelError("", "Seu carrinho está vazio, inclua um lanche");
             }

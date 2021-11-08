@@ -10,10 +10,10 @@
             <a asp-controller="Lanche" asp-action="Details" asp-route-lancheId="@Model.LancheId">@Model.Nome</a>
         </h3>
         <p>@Model.DescricaoCurta</p>
-    </div>   
+    </div>
     <div class="addToCart text-right">
         <p class="button">
-            <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra" 
+            <a class="btn btn-primary" id="cartButton" asp-controller="CarrinhoCompra"
                asp-action="AdicionarItemNoCarrinho" asp-route-lancheId="@Model.LancheId"> Incluir no carrinho </a>
         </p>
     </div>

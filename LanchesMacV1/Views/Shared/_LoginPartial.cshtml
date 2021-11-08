@@ -3,6 +3,7 @@
 
 @inject SignInManager<IdentityUser> SignInManager
 
+
 @if (SignInManager.IsSignedIn(User))
 {
     <form asp-area="" asp-controller="Account" asp-action="Logout" id="logoutForm"
@@ -20,9 +21,4 @@ else
         <li><a id="loginLink" asp-controller="Account" asp-action="Login">Log in</a></li>
 
     </ul>
-
 }
-
-
-
-

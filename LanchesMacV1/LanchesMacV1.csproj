@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20211104141843_Adicionadas_instancias_do_Identity.cs" />
     <Compile Remove="Migrations\20211104141843_Adicionadas_instancias_do_Identity.Designer.cs" />
+    <Compile Remove="Migrations\20211108192359_Inclusao_de_tabelas_ApsUser_e_AspRoles.cs" />
+    <Compile Remove="Migrations\20211108192359_Inclusao_de_tabelas_ApsUser_e_AspRoles.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

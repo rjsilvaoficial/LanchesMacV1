@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LanchesMacV1.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         public IActionResult Index()

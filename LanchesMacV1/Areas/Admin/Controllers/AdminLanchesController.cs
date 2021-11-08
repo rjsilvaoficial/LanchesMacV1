@@ -12,8 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace LanchesMacV1.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
-
+    [Authorize(Roles = "Admin")]
     public class AdminLanchesController : Controller
     {
         private readonly AppDbContext _context;

@@ -22,8 +22,8 @@ namespace LanchesMacV1.Repository
         public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.Where(seletor => seletor.IsLanchePreferido);
 
         public Lanche GetLancheById(int lancheId)
-        {    
-        // tipo   nomeVar       contx . ObjContex.  Linq        (referido =. referido.Entity1Id ==entity1Id)
+        {
+            // tipo   nomeVar       contx . ObjContex.  Linq        (referido =. referido.Entity1Id ==entity1Id)
             var lancheBuscado = _context.Lanches.FirstOrDefault(objeto => objeto.LancheId == lancheId);
             return lancheBuscado;
         }

@@ -27,7 +27,7 @@ namespace LanchesMacV1.Repository
 
             var carrinhoCompraItens = _carrinhoCompra.CarrinhoCompraItens;
 
-            foreach(var item in carrinhoCompraItens)
+            foreach (var item in carrinhoCompraItens)
             {
                 var pedidoDetalhe = new PedidoDetalhe()
                 {

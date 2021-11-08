@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robso\\source\\repos\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj": {}
+    "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robso\\source\\repos\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj": {
+    "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robso\\source\\repos\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
+        "projectUniqueName": "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
         "projectName": "LanchesMacV1",
-        "projectPath": "C:\\Users\\robso\\source\\repos\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
+        "projectPath": "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1.csproj",
         "packagesPath": "C:\\Users\\robso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robso\\source\\repos\\LanchesMacV1\\LanchesMacV1\\obj\\",
+        "outputPath": "C:\\Users\\robso\\Desktop\\LanchesMacV1\\LanchesMacV1\\LanchesMacV1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

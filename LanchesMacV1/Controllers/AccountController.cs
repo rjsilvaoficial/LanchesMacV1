@@ -1,9 +1,7 @@
 ﻿using LanchesMacV1.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace LanchesMacV1.Controllers
@@ -13,52 +11,51 @@ namespace LanchesMacV1.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager, 
+        public AccountController(UserManager<IdentityUser> userManager,
                                  SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
         }
 
-        [HttpGet]
         public IActionResult Login(string returnUrl)
         {
-            return View(new LoginViewModel() 
-            { 
-                ReturnUrl = returnUrl 
+            return View(new LoginViewModel()
+            {
+                ReturnUrl = returnUrl
             });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login (LoginViewModel loginViewModel)
+        public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
             if (!ModelState.IsValid)
-                return View(loginViewModel);
+                return View(loginVM);
 
-            var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
+            var user = await _userManager.FindByNameAsync(loginVM.UserName);
 
-            if(user != null)
+            if (user != null)
             {
-                var result = await _signInManager.PasswordSignInAsync(user, loginViewModel.Password, false, false);
+                var result = await _signInManager.PasswordSignInAsync(user, loginVM.Password, false, false);
 
                 if (result.Succeeded)
                 {
-                    if (string.IsNullOrEmpty(loginViewModel.ReturnUrl))
+                    if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                     {
                         return RedirectToAction("Index", "Home");
                     }
-                    return RedirectToAction(loginViewModel.ReturnUrl);
+                    return Redirect(loginVM.ReturnUrl);
 
                 }
 
             }
             ModelState.AddModelError("", "Usuário/Senha inválidos, ou não cadastrados!");
-            return View(loginViewModel);
+            return View(loginVM);
 
 
         }
-    
-        
+
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -67,33 +64,34 @@ namespace LanchesMacV1.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(LoginViewModel regVM)
+        public async Task<IActionResult> Register(LoginViewModel registroVM)
         {
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser()
-                {
-                    UserName = regVM.UserName
-                };
-
-                var result = await _userManager.CreateAsync(user, regVM.Password);
+                var user = new IdentityUser() { UserName = registroVM.UserName };
+                var result = await _userManager.CreateAsync(user, registroVM.Password);
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
-                }
+                    //// Adiciona o usuário padrão ao perfil Member
+                    await _userManager.AddToRoleAsync(user, "Member");
+                    await _signInManager.SignInAsync(user, isPersistent: false);
 
+                    return RedirectToAction("LoggedIn", "Account");
+                }
             }
-            return View(regVM);
+            return View(registroVM);
         }
 
+        public ViewResult LoggedIn() => View();
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
-    
+
     }
 }

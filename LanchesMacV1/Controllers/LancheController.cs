@@ -43,7 +43,7 @@ namespace LanchesMacV1.Controllers
             }
             else
             {
-                if(string.Equals("Normal",categoriaInterna, StringComparison.OrdinalIgnoreCase))
+                if (string.Equals("Normal", categoriaInterna, StringComparison.OrdinalIgnoreCase))
                 {
                     lanches = _lancheRepository.Lanches.Where(res => res.Categoria.Nome.Equals("Normal"));
                 }
@@ -80,8 +80,8 @@ namespace LanchesMacV1.Controllers
             string _searchString = searchString;
             IEnumerable<Lanche> lanches;
             string _categoriaAtual = string.Empty;
-            
-            if(string.IsNullOrEmpty(_searchString))
+
+            if (string.IsNullOrEmpty(_searchString))
             {
                 lanches = _lancheRepository.Lanches;
             }

@@ -24,5 +24,11 @@ namespace LanchesMacV1.Controllers
             };
             return View(homeViewModel);
         }
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
     }
 }

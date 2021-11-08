@@ -46,6 +46,8 @@ namespace LanchesMacV1
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.ConfigureApplicationCookie(options => options.AccessDeniedPath = "/Home/AccessDenied");
+
             //Obj transient são sempre diferentes; uma nova instância é fornecida a todos os controllers e todos os serviços.
             services.AddTransient<ICategoriaRepository, CategoriaRepository>();
             services.AddTransient<ILancheRepository, LancheRepository>();
@@ -89,7 +91,7 @@ namespace LanchesMacV1
                 routes.MapRoute(
                     name: "filtrarPorCategoria",
                     template: "Lanche/{action}/{categoria}",
-                    defaults: new {Controller = "Lanche", action = "List" });
+                    defaults: new { Controller = "Lanche", action = "List" });
 
                 routes.MapRoute(
                     name: "default",
