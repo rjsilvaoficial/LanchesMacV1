@@ -26,22 +26,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LanchesMacV1</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Lanches Mac</a>
             </div>
             <div class="navbar-collapse collapse" id="bs-example-navbar-collpse-1">
                 <ul class="nav navbar-nav">
 
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-
-                    @await Component.InvokeAsync("CategoriaMenu")
-
-                    <li><a asp-area="" asp-controller="Homex" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Contato" asp-action="Index">Contact</a></li>
-
+                    @*<li><a asp-area="" asp-controller="Home" asp-action="Index">Ínicio</a></li>*@
                     @if (User.IsInRole("Admin"))
                     {
                         <li><a asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a></li>
                     }
+
+                    @await Component.InvokeAsync("CategoriaMenu")
+
+                    <li><a asp-area="" asp-controller="Homex" asp-action="About">Sobre</a></li>
+                    <li><a asp-area="" asp-controller="Contato" asp-action="Index">Contato</a></li>
+
+
 
                     @if (User.Identity.IsAuthenticated)
                     {

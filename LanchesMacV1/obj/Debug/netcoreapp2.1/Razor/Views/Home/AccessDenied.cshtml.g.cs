@@ -64,7 +64,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("<br />\r\n<br />\r\n<div class=\"container\">\r\n    <div class=\"jumbotron\">\r\n        <p>\r\n            ");
             EndContext();
             BeginContext(95, 67, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "20a699d79c1c40468d8c049285faa272", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "08b1362a5829476184b93672c24be68f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -83,7 +83,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("\r\n            <h1>Acesso negado</h1>\r\n        </p>\r\n    </div>\r\n    ");
             EndContext();
             BeginContext(230, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25d0d331eef4420fbf9346921b1609bd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "650a57f46db9433b931753dc440d7943", async() => {
                 BeginContext(286, 13, true);
                 WriteLiteral("Voltar a home");
                 EndContext();

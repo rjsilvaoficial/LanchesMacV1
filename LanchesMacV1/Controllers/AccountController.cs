@@ -28,7 +28,7 @@ namespace LanchesMacV1.Controllers
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
-        {
+        {            
             if (!ModelState.IsValid)
                 return View(loginVM);
 
@@ -49,9 +49,9 @@ namespace LanchesMacV1.Controllers
                 }
 
             }
-            ModelState.AddModelError("", "Usuário/Senha inválidos, ou não cadastrados!");
-            return View(loginVM);
 
+            ModelState.AddModelError("User", "Usuário/Senha inválidos, ou não cadastrados!");
+            return View(loginVM);
 
         }
 

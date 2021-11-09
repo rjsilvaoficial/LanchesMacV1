@@ -8,12 +8,12 @@ namespace LanchesMacV1.ViewModels
 {
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Digite um usuário válido")]
         [Display(Name = "Usuário")]
-        //[StringLength(100, ErrorMessage = "O usuário possui no máximo 100 caracteres!")]
+        [StringLength(100, ErrorMessage = "O usuário possui no máximo 100 caracteres!")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Digite uma senha válida")]
         [Display(Name = "Senha")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
@@ -21,3 +21,4 @@ namespace LanchesMacV1.ViewModels
         public string ReturnUrl { get; set; }
     }
 }
+
