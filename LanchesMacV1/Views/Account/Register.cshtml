@@ -10,7 +10,8 @@
 
                     <form asp-controller="Account" asp-action="Register" method="post" class="form-horizontal" role="form">
                         <h4>Crie sua conta e faça logo o pedido do seu lanche</h4>
-
+                        </br>
+                        <strong class="text-danger">@Html.ValidationSummary()</strong>
                         <hr />
                         <input type="hidden" asp-for="ReturnUrl" />
 

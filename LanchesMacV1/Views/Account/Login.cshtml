@@ -11,7 +11,7 @@
                         <h4>Informe o nome do usuário e a senha</h4>
                         <hr />
                         <input type="hidden" asp-for="ReturnUrl" />
-
+                        <strong class="text-danger">@Html.ValidationSummary()</strong>
                         <div class="form-group">
                             <label asp-for="UserName" class="col-md-2 control-label"></label>
                             <div class="col-md-10">

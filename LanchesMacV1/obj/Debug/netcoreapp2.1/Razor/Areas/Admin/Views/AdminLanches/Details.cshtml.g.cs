@@ -249,7 +249,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1824, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83812b65f65341888a4aa7355c00abf1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9308cbeaff0402f8e9dca112dbb09fd", async() => {
                 BeginContext(1876, 6, true);
                 WriteLiteral("Editar");
                 EndContext();
@@ -284,7 +284,7 @@ using LanchesMacV1.ViewModels;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1894, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d578b5864f642f38210e099ff284106", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b18cb9d7d0114004a87b318ab3bd5257", async() => {
                 BeginContext(1916, 6, true);
                 WriteLiteral("Voltar");
                 EndContext();

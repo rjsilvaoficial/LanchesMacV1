@@ -50,7 +50,7 @@ namespace LanchesMacV1.Controllers
 
             }
 
-            ModelState.AddModelError("User", "Usuário/Senha inválidos, ou não cadastrados!");
+            ModelState.AddModelError("User", "Informe um usuário e senha válidos!");
             return View(loginVM);
 
         }
@@ -80,6 +80,8 @@ namespace LanchesMacV1.Controllers
                     return RedirectToAction("LoggedIn", "Account");
                 }
             }
+            ModelState.AddModelError("User", "Usuário/Senha não disponíveis");
+
             return View(registroVM);
         }
 
