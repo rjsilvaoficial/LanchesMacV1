@@ -26,6 +26,7 @@ namespace LanchesMacV1.Models
         public static CarrinhoCompra GetCarrinho(IServiceProvider services) //Usa IServiceProvider para acessar o serviços em Startup.cs
         {
             //Define uma session usando o contexto atual e precisa ser inserido em IServiceCollection do Startup.cs.ConfigureServices().
+            
             //? == if, se não houver sessão retornará null, senão retornará a sessão no contexto
 
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
