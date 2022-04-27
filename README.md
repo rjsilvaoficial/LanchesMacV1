@@ -1,6 +1,6 @@
 # LanchesMacV1
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/devsuperior/sds1-wmazoni/blob/master/LICENSE) 
+[![NPM](https://img.shields.io/github/license/rjsilvaoficial/LanchesMacV1)](https://github.com/rjsilvaoficial/LanchesMacV1/blob/master/LICENSE) 
 
 # Sobre o projeto
 
